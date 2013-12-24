@@ -12,9 +12,18 @@ also  adb and fastboot
 ## How To Build and Install 
 ## via terminal
 go to the root source of the project 
-``` mkdir build 
-``` cd build 
-``` qmake ../UbuntuInstaller.pro
-``` make 
-``` sudo make install 
-
+```
+mkdir build
+```
+```
+ cd build 
+```
+```
+ qmake ../UbuntuInstaller.pro
+```
+```
+ make 
+``` 
+```
+sudo make install 
+```
