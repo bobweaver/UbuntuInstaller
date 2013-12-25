@@ -35,6 +35,21 @@ void ApplicationLauncher::launchScript()
     qDebug() << m_Out  ;
 }
 
+void ApplicationLauncher::launchwaitScript()
+{
+    QProcess sk;
+    sk.setProcessChannelMode(QProcess::MergedChannels);
+    sk.start(m_AppName);
+    sk.waitForFinished(-1);
+
+        if( !sk.waitForFinished()){
+        m_Out = sk.readAllStandardOutput();
+    }else {
+       m_Out  =  sk.readAll();
+    }
+    qDebug() << m_Out  ;
+}
+
 QString ApplicationLauncher::getSTD()
 {
     return m_Out ;

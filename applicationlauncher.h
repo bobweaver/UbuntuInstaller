@@ -18,6 +18,7 @@ public:
     QString arguments() const;
     void setArguments(const QString &arguments);
     Q_INVOKABLE void launchScript();
+    Q_INVOKABLE void launchwaitScript();
     Q_INVOKABLE QString  getSTD();
 private:
     QProcess *m_process;

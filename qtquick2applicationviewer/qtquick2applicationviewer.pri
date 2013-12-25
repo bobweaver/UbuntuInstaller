@@ -122,10 +122,10 @@ android-no-sdk {
             } else {
                 target = $$OUT_PWD/$$eval($${deploymentfolder}.target)
             }
-            desktopfile.files = $${TARGET}.desktop
+            desktopfile.files = ubuntu-installer.desktop
             desktopfile.path = /usr/share/applications
-            icon.files = $${TARGET}80.png
-            icon.path = /usr/share/icons/hicolor/80x80/apps
+            icon.files = $${TARGET}64.png
+            icon.path = /usr/share/icons/hicolor/64x64/apps
              target = $$replace(target, \\\\, /)
             sourcePathSegments = $$split(source, /)
             targetFullPath = $$target/$$last(sourcePathSegments)

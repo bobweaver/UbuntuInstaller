@@ -9,17 +9,7 @@ Page {
     width: parent.width
     height: parent.height
     title:  "Flash"
-    tools: ToolbarItems{
-        ToolbarButton{
-          action: Action{
-           text: i18n.tr("back")
-           onTriggered:{
-            //stop the timers and start the setting
-               pageLoader.source = "PageOne.qml"
-           }
-          }
-      }
-    }
+
     Rectangle{
         id:head
         width:     parent.width

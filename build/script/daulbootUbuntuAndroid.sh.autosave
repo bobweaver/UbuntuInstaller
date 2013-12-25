@@ -49,8 +49,6 @@ detect_device() {
   fi
   fi
 }
-
-
 print_usage() {
   echo "Welcome to Humpolec. This is Ubuntu-Android dualboot enabler"
   echo " "
